@@ -13,10 +13,11 @@
 </head>
 <body>
 <div class="overlay"></div>
-    <a href="/"><img class="homeImg" src="../Assets/Home.png" alt=""></a>
+    <a href="/"><img src="{{ asset('assets/Home.png') }}" alt="Home" class="homeImg"> </a>
+
     <div class="main">
         <div class="window">
-        <div class="containerh1">
+            <div class="containerh1">
                 <img src="{{ asset('assets/TechTrendsLogo.png') }}" alt="TechTrends Logo"> 
                 <h1>TechTrends</h1>
             </div>
@@ -24,25 +25,12 @@
             <div class="form-container">
                 <form action="" method="POST">
                     <div class="input-box">
-                        <img src="../Assets/DarkUser.png" alt="">
-                        <input type="text" id="name" name="name" placeholder="Nome de Usuário">
-                    </div>
-                    <div class="input-box">
-                        <img src="../Assets/Address.png" alt="">
-                        <input type="text" id="address" name="address" placeholder="Endereço">
-                    </div>
-                    <div class="input-box">
                         <img src="../Assets/Email.png" alt="">
                         <input type="text" id="email" name="email" placeholder="email">
                     </div>
-            
                     <div class="input-box">
                         <img src="../Assets/Password.png" alt="">
                         <input type="password" id="password" name="password" placeholder="Senha">
-                    </div>
-                    <div class="input-box">
-                        <img src="../Assets/Password.png" alt="">
-                        <input type="password" id="PasswordConfirmation" name="PasswordConfirmation" placeholder="Confirmar Senha">
                     </div>
                     <div class="divsubmit">
                         <a href="home">Submit</a>
